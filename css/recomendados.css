@@ -1,0 +1,112 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    user-select: none;
+}
+
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+
+header {
+    background-color: #001489;
+    height: 65px;
+}
+
+header img {
+    height: 45px;
+    width: 65px;
+    margin-left: 1rem;
+    margin-block: 0.5rem;
+}
+
+header {
+    background-color: #001489;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+header a {
+    color: white;
+    list-style: none;
+    text-decoration: none;
+}
+li {
+    padding-block: 20px;
+    margin-inline: 1rem;
+}
+
+header a:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+    margin-block: 3rem;
+    margin-inline: 1rem;
+
+}
+section p {
+    margin-top: 20px;
+}
+#filtros {
+    display: flex;
+}
+
+.search-box {
+    display: flex;
+    margin-right: 10px;
+}
+
+.search {
+    height: 3em;
+    position: relative;
+}
+
+.input-search {
+    height: 50px;
+    width: 250px;
+    border-style: none;
+    padding: 0 1em;
+    outline: none;
+    border-radius: 25px;
+    transition: all .5s ease-in-out;
+    background-color: #4C5AAC;
+    padding-right: 40px;
+    color: #fff;
+}
+
+.input-search::placeholder {
+    color: #fff;
+    font-weight: 300;   
+}
+
+.btn-search {
+    width: 50px;
+    height: 50px;
+    border-style: none;
+    font-size: 20px;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    right: 0px;
+    color: #fff;
+    background-color: transparent;
+    pointer-events: painted;
+    background-color: #001489;
+    border-radius: 0px 25px 25px 0px;
+}

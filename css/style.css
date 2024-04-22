@@ -1,0 +1,34 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+body {
+    background: black  url('../img/bg.png') center center no-repeat fixed;
+    background-size: cover;
+}
+header img {
+    height: 45px;
+    width: 100px;
+    margin-left: 1rem;
+    margin-block: 0.5rem;
+}
+main {
+    margin-inline: 3rem;
+    text-align: center;
+}
+h1 {
+    margin-bottom: 2rem;
+    font-weight: 500;
+}
+input[type=text] {
+    border-radius: 10px;
+    outline: none;
+    padding-inline: 5px;
+    border: 1px solid black;
+}

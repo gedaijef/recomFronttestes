@@ -4,6 +4,7 @@
 :root {
     --azul100: #001489;
     --azul70: #4C5AAC;
+    --azul20: #CCD0E7;
     --azul05: #F2F3F9;
 }
 
@@ -13,12 +14,21 @@
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
 }
-
 body {
-    background: black url('../img/Fundo.png') center center no-repeat fixed;
-    background-size: cover;
-    height: 100vh;    
+    background-color: var(--azul20);
+}
+#imgTopRight {
+    position: fixed;
+    justify-content: end;
+    display: flex;
     width: 100vw;
+}
+
+#imgBottomLeft {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    text-align: center;
 }
 
 header img {
@@ -86,28 +96,35 @@ input[type=text]::placeholder {
         font-size: 1.5rem;
         margin-inline: 1rem;
     }
+
     main {
         margin: 0;
     }
-    .search__input  {
+
+    .search__input {
         width: 50vw;
     }
+
     input[type=text]::placeholder {
         font-size: 0.8rem;
     }
 }
+
 @media screen and (max-width: 330px) {
     h1 {
         font-size: 1.2rem;
         margin-inline: 1rem;
         margin-bottom: 1rem;
     }
+
     main {
         margin: 0;
     }
-    .search__input  {
+
+    .search__input {
         width: 70vw;
     }
+
     input[type=text]::placeholder {
         font-size: 0.8rem;
     }

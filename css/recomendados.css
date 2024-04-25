@@ -17,6 +17,8 @@
 body {
     background: black url('../img/Fundo.png') center center no-repeat fixed;
     background-size: cover;
+    height: 100vh;
+    width: 100vw;
 }
 
 header img {
@@ -25,16 +27,24 @@ header img {
     margin-left: 1rem;
     margin-block: 0.5rem;
 }
+#filtro {
+    display: inline-flex;
+}
+.search {
+    display: flex;
+    background-color: var(--azul05);
+    width: max-content;
+    border-radius: 25px;
+}
 
 .search__input {
     background-color: var(--azul05);
     padding: 0.7rem 1rem;
-    border-radius: 25px;
     outline: none;
     padding-inline: 10px;
     border: none;
     width: 30rem;
-    height: 2.5rem;
+    border-radius: 25px;
     transition: all ease-in-out .5s;
 }
 
@@ -47,6 +57,8 @@ input[type=text]::placeholder {
 .search__button {
     border: none;
     background-color: var(--azul05);
+    margin-right: 10px;
+    border-radius: 0px 25px 25px 0px;
 }
 
 .search__button:hover {

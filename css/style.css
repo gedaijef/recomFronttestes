@@ -22,6 +22,7 @@ body {
     justify-content: end;
     display: flex;
     width: 100vw;
+    z-index: 1;
 }
 
 #imgBottomLeft {
@@ -41,6 +42,8 @@ header img {
 main {
     margin-inline: 3rem;
     text-align: center;
+    z-index: 2;
+    position: relative;
 }
 
 h1 {

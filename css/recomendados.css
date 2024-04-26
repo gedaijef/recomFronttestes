@@ -4,6 +4,7 @@
 :root {
     --azul100: #001489;
     --azul70: #4C5AAC;
+    --azul20: #CCD0E7;
     --azul05: #F2F3F9;
 }
 
@@ -15,10 +16,22 @@
 }
 
 body {
-    background: black url('../img/Fundo.png') center center no-repeat fixed;
-    background-size: cover;
-    height: 100vh;
+    background-color: var(--azul20);
+}
+
+#imgTopRight {
+    position: fixed;
+    justify-content: end;
+    display: flex;
     width: 100vw;
+    z-index: 1;
+}
+
+#imgBottomLeft {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    text-align: center;
 }
 
 header img {
@@ -27,9 +40,7 @@ header img {
     margin-left: 1rem;
     margin-block: 0.5rem;
 }
-#filtro {
-    display: inline-flex;
-}
+
 .search {
     display: flex;
     background-color: var(--azul05);
@@ -68,4 +79,66 @@ input[type=text]::placeholder {
 .search__icon {
     height: 1.2em;
     width: 1.3em;
+}
+nav > p, nav a {
+    text-decoration: none;
+    color: var(--azul70);
+}
+nav a {
+    cursor: pointer;
+}
+main {
+    z-index: 2;
+    position: relative;
+}
+#nav > h1, #nav > p {
+    color: var(--azul100);
+}
+#nav > h1 {
+    margin-block: 0.5rem;
+}
+
+section {
+    margin: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+article {
+    margin: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    background-color: var(--azul05);
+    width: 25rem;
+    display: flex;
+    border-radius: 25px;
+    padding: 25px;
+    margin-block: 2rem;
+}
+
+.capaDoLivro {
+    width: 9rem;
+    height: 9rem;
+    margin-right: 1.2rem;
+}
+.textos {
+    padding-block: 0.5rem;
+}
+h1 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+h2 {
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-block: 0.5rem;
+}
+h3 {
+    font-size: 0.9rem;
+    font-weight: 400;
 }

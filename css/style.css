@@ -32,15 +32,18 @@ body {
     text-align: center;
 }
 
-header img {
-    height: 45px;
+#logoInstituto {
     width: 100px;
     margin-left: 1rem;
+    position: absolute;
     margin-block: 0.5rem;
 }
 
 main {
-    margin-inline: 3rem;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
     text-align: center;
     z-index: 2;
     position: relative;
@@ -51,6 +54,7 @@ h1 {
     letter-spacing: 0.48px;
     margin-bottom: 2rem;
     font-weight: 500;
+    font-size: 2rem;
 }
 
 .search {

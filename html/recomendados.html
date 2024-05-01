@@ -22,7 +22,7 @@
                 <nav>
                     <p><a href="index.html">início</a> > seleção de livros</p>
                 </nav>
-                <h1>Gênero selecionado: Suspense</h1>
+                <h1>Gênero selecionado: <span id="genSelecionado"></span></h1>
                 <p>Selecione um livro ou filtre um autor</p>
             </div>
 
@@ -94,6 +94,11 @@
     </main>
 
     <div id="imgBottomLeft"><img src="../img/img-bottom-left.png" alt=""></div>
+    <script defer>
+        const gen = sessionStorage.getItem("Gênero")
+        const enviarGen = document.getElementById("genSelecionado")
+        enviarGen.innerText = gen
+    </script>
 </body>
 
 </html>
